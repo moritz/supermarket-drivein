@@ -72,3 +72,8 @@ On the command line, you can send the request like this:
     
 The return value is an object with the newly created record, including the server-generated ID.
 
+#### Deleting
+
+... works with a `DELETE` request to `https://drivein.moritzlenz.de/merchant/<id>`, e.g.
+
+    curl -X DELETE https://drivein.moritzlenz.de/merchant/2
