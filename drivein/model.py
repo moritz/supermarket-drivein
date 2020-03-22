@@ -19,6 +19,8 @@ class Merchant(db.Model):
     latitude = db.Column(db.Float)
     longitude = db.Column(db.Float)
 
+    phone_number = db.Column(db.String)
+    products = db.Column(db.String)
     url_website = db.Column(db.String)
     url_online_shopping = db.Column(db.String)
 
@@ -33,6 +35,8 @@ class Merchant(db.Model):
             'category': self.category.as_json(),
             'latitude': self.latitude,
             'longitude': self.longitude,
+            'phone_number': self.phone_number,
+            'products': self.products,
             'url_website': self.url_website,
             'url_online_shopping': self.url_online_shopping,
             'out_of_stock': self.out_of_stock,

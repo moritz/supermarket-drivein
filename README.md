@@ -33,6 +33,8 @@ A merchant has a unique `id` (integer), and the following mandatory attributes:
 as well as the following optional attributes, all of which can be either the designated type or `null`:
 
 * `latitude`, `longitude`: geo coordinates (float)
+* `phone_number (string)`: Phone contact for the general public
+* `products` (string):  Products that the merchant offers
 * `url_website` (string): Link to the merchant's website
 * `url_online_shopping` (string): Link to the merchant's online shipping portal
 * `out_of_stock` (string): Text describing what the merchant currently doesn't have in stock
